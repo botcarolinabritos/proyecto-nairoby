@@ -1,0 +1,233 @@
+@import url('https://fonts.cdnfonts.com/css/nevolasty');
+/* font-family: 'Nevolasty', sans-serif; */
+@import url('https://fonts.cdnfonts.com/css/giveny-2');
+/* font-family: 'Giveny', sans-serif; */
+@import url('https://fonts.cdnfonts.com/css/nattalia-sillena');
+/* font-family: 'Nattalia Sillena', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    gap: 20px;
+}
+.container{
+    width: 100%;
+    height: 400px;
+    padding: 0.1px;
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(#94007952, #ff61e257),url(./images/background-shoes.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position:center;
+}
+.under-container{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(#94007952, #ff61e257);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 50px;
+    height: 25px;
+}
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+ul li a:hover{
+    color: #ff00d0;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+}
+a{
+    width: 25%;
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Giveny', sans-serif;
+    text-decoration: none;
+}
+.button:hover{
+    color: black;
+}
+.button{
+    width: 60px;
+    height: 20px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa15d0;
+    border-radius: 10px;
+}
+.title{
+    font-family: 'Nevolasty', sans-serif;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.2px;
+    color:#fff;
+}
+.container-title{
+    height: 300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.wave{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 260px;
+}
+.menu_video{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    left: 15px;
+}
+.menu_video h2{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 90px;
+    right: 15px;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Nattalia Sillena', sans-serif;
+    font-size: 4rem;
+    color: #ffffff98;
+    text-align: center;
+}
+video{
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+}
+.gallery{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.gallery_picture img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.card-gallery{
+    height: auto;
+    display: grid;
+    gap: 10px;
+}
+.card-text{
+    font-family: 'Giveny', sans-serif;
+}
+footer{
+    background: linear-gradient(#94007952, #ff61e257);
+    font-size: 13px;
+}
+.final{
+    height: 3rem;
+    display: flex;
+    justify-content:center;
+}
+#contacto{
+    position: relative;
+}
+#contacto img{
+    margin:10px 25px;
+}
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.copyright{
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width:768px){
+    .container{
+        background-attachment: fixed;
+    }
+    .logo img{
+        width: 100px;
+        height: 50px;
+    }
+    a{
+        font-size: 25px;
+    }
+    .menu ul{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto auto auto;
+    }
+    .button{
+        width: 120px;
+        height: 30px;
+        margin-top: 0;
+        border-radius: 50px;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .menu_video{
+        height: 450px;
+        left: 45px;
+    }
+    .menu_video h2{
+        top: 150px;
+        right: 30px;
+        font-size: 7rem;
+    }
+    .wave{
+        top: 252px;
+    }
+    video{
+        height: 450px;
+    }
+    .gallery{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media (min-width:1024px){
+    .container{
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+}
+    .wave{
+    top: 351px;
+    }
+.title{
+    font-size: 70px;
+}
+    .gallery{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .final a{
+        width: auto;
+   }}
