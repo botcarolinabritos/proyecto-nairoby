@@ -3,68 +3,78 @@
 @import url('https://fonts.cdnfonts.com/css/giveny-2');
 /* font-family: 'Giveny', sans-serif; */
 @import url('https://fonts.cdnfonts.com/css/nattalia-sillena');
+
 /* font-family: 'Nattalia Sillena', sans-serif; */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    display: grid;
+
+body {
     gap: 20px;
 }
-.container{
+
+.container {
     width: 100%;
     height: 400px;
     padding: 0.1px;
     display: flex;
     flex-direction: column;
-    background-image:linear-gradient(#94007952, #ff61e257),url(./images/background-shoes.png);
-    /* background-repeat: no-repeat; */
+    background-image: linear-gradient(#94007952, #ff61e257), url(./images/background-shoes.png);
     background-size: cover;
-    background-position:center;
+    background-position: center;
 }
-.under-container{
+
+.under-container {
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
     background: linear-gradient(#94007952, #ff61e257);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.logo{
+
+.logo {
     width: 25%;
     display: flex;
     justify-content: center;
 }
-.logo img{
-    width: 50px;
+
+.logo img {
+    width: 45px;
     height: 25px;
 }
-.menu{
+
+.menu {
     width: 50%;
     display: flex;
     justify-content: center;
 }
-ul li a:hover{
+
+ul li a:hover {
     color: #ff00d0;
 }
-ul li{
+
+ul li {
     display: inline-block;
     list-style: none;
 }
-a{
-    width: 25%;
+
+a {
+    width: 90%;
     color: #fff;
-    font-size: 11px;
+    font-size: 15px;
     font-family: 'Giveny', sans-serif;
     text-decoration: none;
 }
-.button:hover{
+
+.button:hover {
     color: black;
 }
-.button{
-    width: 60px;
+
+.button {
+    width: 70px;
     height: 20px;
     margin-top: 5px;
     display: flex;
@@ -73,36 +83,40 @@ a{
     background-color: #fa15d0;
     border-radius: 10px;
 }
-.title{
+
+.title {
     font-family: 'Nevolasty', sans-serif;
     z-index: 1;
     text-align: center;
     color: #fff;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.2px;
-    color:#fff;
+    color: #fff;
 }
-.container-title{
+
+.container-title {
     height: 300px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.wave{
+
+.wave {
     width: 100%;
     height: auto;
     position: absolute;
     top: 260px;
 }
-.menu_video{
+
+.menu_video {
     width: 100%;
-    height: 250px;
+    height: 280px;
     position: relative;
     left: 15px;
 }
-.menu_video h2{
+
+.menu_video h2 {
     width: 100%;
-    height: auto;
     position: absolute;
     top: 90px;
     right: 15px;
@@ -113,121 +127,210 @@ a{
     color: #ffffff98;
     text-align: center;
 }
-video{
+
+video {
     width: 90%;
     height: 250px;
     object-fit: cover;
+
 }
-.gallery{
+
+.card-gallery {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
-.gallery_picture img{
+
+.gallery_picture img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
-.card-gallery{
-    height: auto;
-    display: grid;
-    gap: 10px;
-}
-.card-text{
+
+.card-text {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Giveny', sans-serif;
 }
-footer{
+
+footer {
     background: linear-gradient(#94007952, #ff61e257);
     font-size: 13px;
 }
-.final{
-    height: 3rem;
+
+.final {
+    width: 100%;
     display: flex;
-    justify-content:center;
 }
-#contacto{
-    position: relative;
-}
-#contacto img{
-    margin:10px 25px;
-}
-.ubicacion{
+
+.final a {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.final img {
+    width: 20px;
+    margin: 10px 25px;
+}
+
+.ubicacion {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
 }
-.copyright{
-    margin-bottom: 13px;
+
+.copyright {
     display: flex;
     justify-content: center;
 }
-@media (min-width:768px){
-    .container{
-        background-attachment: fixed;
+
+.copyright img {
+    width: 15px;
+}
+
+
+@media (min-width:768px) {
+    .container {
+        width: 100%;
+        background-size: contain;
+        background-position: left;
     }
-    .logo img{
+
+    .logo img {
         width: 100px;
         height: 50px;
     }
-    a{
-        font-size: 25px;
+
+    a {
+        font-size: 18px;
     }
-    .menu ul{
-        display: grid;
+
+    .menu ul {
+        display: flex;
         gap: 20px;
-        grid-template-columns: auto auto auto;
     }
-    .button{
+
+    .button {
         width: 120px;
         height: 30px;
         margin-top: 0;
         border-radius: 50px;
     }
-    .title{
+
+    .title {
         font-size: 3rem;
     }
-    .menu_video{
+
+    .menu_video {
         height: 450px;
         left: 45px;
     }
-    .menu_video h2{
+
+    .menu_video h2 {
         top: 150px;
         right: 30px;
         font-size: 7rem;
     }
-    .wave{
+
+    .wave {
         top: 252px;
     }
-    video{
-        height: 450px;
+
+    video {
+        height: 400px;
     }
-    .gallery{
+
+    .gallery {
         width: 100%;
         height: auto;
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
     }
+
+    .gallery_picture img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .final a{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .final img {
+        width: 25px;
+        margin: 10px 0;
 }
-@media (min-width:1024px){
-    .container{
+
+.ubicacion{
+    font-size: 1rem;
+}
+
+.copyright{
+    font-size: 1rem;
+}
+
+
+}
+
+@media (min-width:1024px) {
+    .container {
         width: 100%;
         height: 500px;
-        background-size: cover;
-}
-    .wave{
-    top: 351px;
+        background-size: contain;
+        background-position: left;
     }
-.title{
-    font-size: 70px;
-}
-    .gallery{
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: auto auto auto;
+
+    a {
+        font-size: 25px;
     }
+
+    .wave {
+        top: 351px;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    video{
+        height: 400px;
+    }
+
+    .card-text{
+        font-size: 1.5rem;
+    }
+
+    .final img{
+        width: 35px;
+        margin-bottom: 40px;
+    }
+
     .final a{
-        width: auto;
-   }}
+        justify-items: center;
+        align-items: center;
+    }
+
+    .ubicacion{
+        font-size: 1.2rem;
+    }
+
+    .copyright{
+        font-size: 1.2rem;
+    }
+
+}
